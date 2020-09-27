@@ -1,0 +1,132 @@
+.order {
+  position: fixed;
+
+  z-index: 10;
+
+  right: 1rem;
+  bottom: 1rem;
+
+  img {
+    width: 5rem;
+    text-shadow: 0px 0px 100px #000;
+  }
+}
+
+.header {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+
+  &__background {
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+
+    z-index: -1;
+
+    background-image: url("/src/images/background-header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__nav {
+    width: 100%;
+    // height: 6.25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 2;
+
+    ul {
+      display: flex;
+      padding: 0 1rem;
+
+      li:not(:last-child) {
+        margin-right: 3rem;
+      }
+      a {
+        color: #fff;
+
+        font-style: italic;
+        font-weight: 100;
+
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__logo {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1 {
+      font-size: $font-xlg;
+      font-weight: normal;
+      font-style: italic;
+      line-height: 0.8;
+    }
+
+    :nth-child(1) {
+      margin-right: 6.5rem;
+    }
+
+    :nth-child(2) {
+      margin-left: 6.5rem;
+    }
+  }
+
+  > h3 {
+    font-weight: 100;
+    font-size: 80%;
+    padding: 0 1rem;
+  }
+  &__address {
+    position: absolute;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    font-size: 70%;
+    height: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .tel {
+      margin-right: 1rem;
+    }
+  }
+
+  &__scroll {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      img {
+        width: 2rem;
+      }
+    }
+  }
+}
