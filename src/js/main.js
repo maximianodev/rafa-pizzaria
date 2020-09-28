@@ -1,1 +1,0 @@
-document.getElementById('data-age').innerHTML = new Date().getFullYear()

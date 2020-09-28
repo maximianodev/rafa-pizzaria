@@ -6,7 +6,7 @@
 
   img {
     width: 5rem;
-    text-shadow: 0px 0px 100px #000;
+    text-shadow: 0px 0px 10px #000;
   }
 }
 
@@ -71,13 +71,16 @@
       font-weight: normal;
       font-style: italic;
       line-height: 0.8;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
 
     :nth-child(1) {
+      animation: logoShowRafa 3s;
       margin-right: 6.5rem;
     }
 
     :nth-child(2) {
+      animation: logoShowPizza 3s;
       margin-left: 6.5rem;
     }
   }
@@ -109,13 +112,10 @@
   }
 
   &__scroll {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    height: 7rem;
     a {
       img {
+        animation: arrow 1s infinite;
         width: 2rem;
       }
     }

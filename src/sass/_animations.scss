@@ -1,0 +1,43 @@
+@keyframes arrow {
+  from {
+    margin-top: 1rem;
+  }
+
+  to {
+    margin-top: 3rem;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  to {
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes logoShowRafa {
+  from {
+    margin-right: 0rem;
+  }
+
+  to {
+    margin-right: 6.5rem;
+  }
+}
+
+@keyframes logoShowPizza {
+  from {
+    margin-left: 0rem;
+  }
+
+  to {
+    margin-left: 6.5rem;
+  }
+}
